@@ -11,6 +11,10 @@ Create the .env file in the root of the project with the following environment v
 AWS_ACCESS_KEY=XXXXXXXX
 AWS_SECRET_ACCESS_KEY=XXXXXXXX
 AWS_REGION_NAME=XXXXXXXX
+MESSAGES_ARN_SNS=XXXXXXXX
+MESSAGES_URL_SQS=XXXXXXXX
+RESPONSES_ARN_SNS=XXXXXXXX
+RESPONSES_URL_SQS=XXXXXXXX
 ```
 With python 3.10 and venv installed, create <b>_env_</b> environment with venv module and activate
 ```bash

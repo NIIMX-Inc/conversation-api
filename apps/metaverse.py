@@ -1,6 +1,11 @@
 import random
 import json
+import os
+import dotenv
 from core import process_sns, process_sqs
+
+# Load environment variables
+dotenv.load_dotenv()
 
 
 class Metaverse:
@@ -14,7 +19,7 @@ class Metaverse:
     
     def get_responses(self):
         """Pulling IA response from SQS 'Messages' queue."""
-        queue_url = 'https://sqs.us-west-1.amazonaws.com/767968023146/Responses'
+        queue_url = os.getenv('RESPONSES_URL_SQS')
         process_sqs(queue_url, self.process_sqs_payload)
 
     @staticmethod
@@ -31,6 +36,6 @@ class Metaverse:
         }
         # Send message
         print('Metaverse message: ', message['message'])
-        arn = 'arn:aws:sns:us-west-1:767968023146:Messages'
+        arn = os.getenv('MESSAGES_ARN_SNS')
         status = process_sns(arn, message)
         print('Status: ', status)
