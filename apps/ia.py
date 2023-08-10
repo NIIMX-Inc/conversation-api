@@ -14,7 +14,7 @@ class IAService:
     def create_aishia_response(message: str):
         """Process message and generate Aishia text response. This function returns a text string."""
         # Example with OpenAI response
-        openai.api_key = "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"
+        openai.api_key = "sk-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
         response_payload = openai.ChatCompletion.create(
             model="gpt-3.5-turbo-0613",
             messages=[{"role": "assistant", "content": message}],
