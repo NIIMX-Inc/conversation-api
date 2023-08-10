@@ -14,8 +14,8 @@ class Metaverse:
     @staticmethod
     def process_sqs_payload(payload):
         """Callback to process SQS payload"""
-        message = json.loads(payload['Message'])
-        print('IA response: ', message)
+        ia_response_payload = json.loads(payload['Message'])
+        print('IA response: ', ia_response_payload['message'])
     
     def get_responses(self):
         """Pulling IA response from SQS 'Messages' queue."""
@@ -30,8 +30,8 @@ class Metaverse:
         conversation_id = random.randint(10000000, 99999999)
         bot_id = random.randint(10000000, 99999999)
         message = {
-            "conversation_id": conversation_id,
-            "bot_id": bot_id,
+            "conversation_id": str(conversation_id),
+            "bot_id": str(bot_id),
             "message": text
         }
         # Send message

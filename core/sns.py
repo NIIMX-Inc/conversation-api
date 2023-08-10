@@ -11,6 +11,7 @@ def process_sns(arn: str, payload: dict):
             TopicArn=arn,
             Message=json.dumps(payload),
             Subject='Message',
+            MessageGroupId=payload['conversation_id']
         )
 
         return response['ResponseMetadata']['HTTPStatusCode']
