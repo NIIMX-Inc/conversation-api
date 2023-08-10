@@ -17,7 +17,7 @@ def process_sqs(queue_url: str, callback: Callable):
                     'SentTimestamp'
                 ],
                 MaxNumberOfMessages=1,
-                WaitTimeSeconds=20
+                WaitTimeSeconds=5
             )
             if 'Messages' in messages:
                 for message in messages['Messages']:
@@ -29,6 +29,7 @@ def process_sqs(queue_url: str, callback: Callable):
                         QueueUrl=queue_url,
                         ReceiptHandle=message['ReceiptHandle']
                     )
+            print('Pulling messages every 5 seconds')
         except Exception as e:
             print('SQS IA Error:', e)
             raise ValueError('Unable to connect to SQS')

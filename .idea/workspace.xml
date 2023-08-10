@@ -5,18 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ceb7865-5be3-4f2b-b46d-0a1e0f5e8c04" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/conversation-api.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/restkit/RESTKit_HttpSetting.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/restkit/RESTKit_Setting.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/ia.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/ia.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/metaverse.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/metaverse.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/sns.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/sns.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/sqs.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/sqs.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +69,7 @@
       <workItem from="1691525391387" duration="1269000" />
       <workItem from="1691532550633" duration="599000" />
       <workItem from="1691681324267" duration="51000" />
-      <workItem from="1691681376237" duration="10414000" />
+      <workItem from="1691681376237" duration="16100000" />
     </task>
     <servers />
   </component>
